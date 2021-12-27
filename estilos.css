@@ -1,0 +1,100 @@
+
+
+main{
+    height: 100%;
+}
+
+.info{
+    text-align: justify;
+    padding: 3em;
+    background-color: rgb(7, 7, 39);
+    color: rgb(218, 218, 218);
+}
+
+.card{
+    margin-top: 3em;
+    text-align: center;
+    border: none;
+    
+}
+
+.card a{
+    width: 25em;
+    height: 25em;
+    
+}
+
+.card h5{
+color: grey;
+text-align: center;
+}
+
+.footer {
+    width: 100%;
+    background-color: whitesmoke;
+}
+
+.footer div {
+    width: 100%;
+    color: rgb(170, 170, 170);
+    font-family: 'Montserrat', sans-serif;
+    font-size: 10px;
+    margin-bottom: 1em;
+}
+
+.footer p {
+    margin-left: 1em;
+}
+
+.icono {
+    width: 2em;
+    height: 2em;
+    margin-top: 1em;
+    margin-left: 2em;
+    margin-bottom: 0.5em;
+}
+
+h2{
+    height: 2em;
+    text-align: center;
+    background-color: rgb(7, 7, 39);
+    color: whitesmoke;
+    font-weight: lighter;
+}
+
+.row{
+    margin-top: 1em;
+}
+
+.card-title{
+    font-size: 2em;
+}
+
+.card-text{
+    font-size: 1.2em;
+    text-align: justify;
+}
+
+iframe{
+    margin-left: 2em;
+}
+
+.card-body form{
+    margin-left: 12em;
+    
+    text-align: start;
+}
+
+form{
+    background-color:rgb(7, 7, 39);
+    color: whitesmoke;
+    }
+
+
+@media screen and (max-width: 600px){
+    .card-body form{
+        width: 100%;
+        text-align: start;
+    }
+    
+}

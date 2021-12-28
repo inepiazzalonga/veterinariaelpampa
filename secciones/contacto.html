@@ -43,83 +43,65 @@
     </header>
     <main>
         <h2>Contacto</h2>
-        <div class="card mb-3">
-            <div class="row g-0">
-                <div class="col-md-4">
-                    <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d12603.255494494995!2d-58.261798!3d-37.841243!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0xc8f11bad8dd50608!2sVeterinaria%20El%20Pampa!5e0!3m2!1ses-419!2sar!4v1640260309009!5m2!1ses-419!2sar"
-            width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
-                </div>
-                <div class="col-md-8">
-                    <div class="card-body">
-                        <form>
-                            <div class="form-group">
-                                <label for="exampleFormControlInput1">Nombre</label>
-                                <input type="text" class="form-control" id="exampleFormControlInput1" placeholder="Nombre">
-                            </div>
-                            <div class="form-group">
-                                <label for="exampleFormControlInput1">Mail</label>
-                                <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="name@example.com">
-                            </div>
-                            <div class="form-group">
-                                <label for="exampleFormControlInput1">Teléfono</label>
-                                <input type="text" class="form-control" id="exampleFormControlInput1" placeholder="Sin 0 y sin 15">
-                            </div>
-                            <div class="form-group">
-                                <label for="exampleFormControlSelect1">Tipo de consulta</label>
-                                <select class="form-control" id="exampleFormControlSelect1">
-                                    <option>Asesoramiento agropecuario</option>
-                                    <option>Sanidad</option>
-                                    <option>Reproducción </option>
-                                    <option>Venta de insumos</option>
-                                </select>
-                            </div>
-                            <div class="form-group">
-                                <label for="exampleFormControlTextarea1">Escriba su consulta</label>
-                                <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
-                            </div>
-                            <button type="button" class="btn btn-primary btn-lg btn-block">Enviar</button>
-                
-                        </form>
+
+        <section class="formulario">
+
+            <form class="container d-flex flex-column justify-content-center align-items-center backgroundColorAzul">
+
+                <div class="bootFormulario container-fluid row">
+
+                    <div class="contactoSeccionIzquierda col-lg-6 col-md-6 col-sm-12">
+                        <div class="form-group d-flex flex-column">
+                            <label for="nombre-completo">Nombre completo: </label>
+                            <input type="text" name="nombre-completo" placeholder="Nombre completo">
+                        </div>
+                        <div class="form-group d-flex flex-column">
+                            <label for="email">Email: </label>
+                            <input type="email" name="email" placeholder="Email">
+                        </div>
+
+                        <div class="form-group d-flex flex-column">
+                            <label for="telefono">Teléfono/s: </label>
+                            <input type="tel" name="telefono" placeholder="Tel sin 0 y sin 15">
+                        </div>
+                        <div class="form-group d-flex flex-column">
+                            <label for="tipoDeConsulta">¿Que tipo de consulta? </label>
+                            <select name="tipoDeConsulta">
+                                <option value="Asesoramiento">Asesoramiento</option>
+                                <option value="Reproducción">Reproducción</option>
+                                <option value="Venta de insumos">Venta de insumos</option>
+                            </select>
+                        </div>
+
                     </div>
+
+                    <div class="contactoSeccionDerecha col-lg-6 col-md-6 col-sm-12">
+                        <div class="form-group d-flex flex-column">
+                            <label for="consulta">Tu Consulta: </label>
+                            <textarea name="consulta" id="consulta" cols="30"
+                                rows="8">Escriba su consulta</textarea>
+                        </div>
+                        <p>Rellena el formulario para que podamos contactar contigo. Nos pondremos en contacto contigo con la mayor brevedad posible.</p>
+
+                    </div>
+
                 </div>
-            </div>
-<!-- 
-        <iframe
-            src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d12603.255494494995!2d-58.261798!3d-37.841243!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0xc8f11bad8dd50608!2sVeterinaria%20El%20Pampa!5e0!3m2!1ses-419!2sar!4v1640260309009!5m2!1ses-419!2sar"
-            width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
 
+                <input type="submit" value="Enviar" id="submit" class=" submit">
 
-        <form>
-            <div class="form-group">
-                <label for="exampleFormControlInput1">Nombre</label>
-                <input type="text" class="form-control" id="exampleFormControlInput1" placeholder="Nombre">
-            </div>
-            <div class="form-group">
-                <label for="exampleFormControlInput1">Mail</label>
-                <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="name@example.com">
-            </div>
-            <div class="form-group">
-                <label for="exampleFormControlInput1">Teléfono</label>
-                <input type="text" class="form-control" id="exampleFormControlInput1" placeholder="Sin 0 y sin 15">
-            </div>
-            <div class="form-group">
-                <label for="exampleFormControlSelect1">Tipo de consulta</label>
-                <select class="form-control" id="exampleFormControlSelect1">
-                    <option>Asesoramiento agropecuario</option>
-                    <option>Sanidad</option>
-                    <option>Reproducción </option>
-                    <option>Venta de insumos</option>
-                </select>
-            </div>
-            <div class="form-group">
-                <label for="exampleFormControlTextarea1">Escriba su consulta</label>
-                <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
-            </div>
-            <button type="button" class="btn btn-primary btn-lg btn-block">Enviar</button>
+            </form>
 
-        </form>
- -->
+        </section>
+        
+        <section class="container  text-center direccion letraColorAzul">
 
+            <div style="width: 100%">
+                <iframe width="100%" height="400" frameborder="0" scrolling="no" marginheight="0" marginwidth="0"
+                src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d12603.255494494995!2d-58.261798!3d-37.841243!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0xc8f11bad8dd50608!2sVeterinaria%20El%20Pampa!5e0!3m2!1ses-419!2sar!4v1640260309009!5m2!1ses-419!2sar"></iframe>
+            </div>
+
+        </section>
+        
     </main>
 
     <footer class="footer">

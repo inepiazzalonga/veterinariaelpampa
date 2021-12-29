@@ -14,7 +14,7 @@
 
 <body>
     <header>
-        <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <nav class="navbar navbar-expand-xs navbar-light bg-light">
             <a class="navbar-brand" href="#"><img src="fotos/logo2.png" alt="logo"></a>
             <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
                 aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
@@ -41,41 +41,31 @@
             </div>
         </nav>
     </header>
-    <section class="container-fluid">
-        <div id="carouselExampleControls" class="carousel slide" data-ride="carousel">
-            <div class="carousel-inner">
-                <div class="carousel-item active">
-                    <img src="fotos/vacas.jpg" class="d-block w-100" alt="vacas">
-                </div>
-                <div class="carousel-item">
-                    <img src="fotos/vacaternero.jpg" class="d-block w-100" alt="vacaternero">
-                </div>
-                <div class="carousel-item">
-                    <img src="fotos/maiz.png" class="d-block w-100" alt="...">
-                </div>
+    <main class="index">
+        
+            <div class="mleft">
+
             </div>
-            <button class="carousel-control-prev" type="button" data-target="#carouselExampleControls"
-                data-slide="prev">
-                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                <span class="sr-only">Previous</span>
-            </button>
-            <button class="carousel-control-next" type="button" data-target="#carouselExampleControls"
-                data-slide="next">
-                <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                <span class="sr-only">Next</span>
-            </button>
-        </div>
-    </section>
-    <section class="container-fluid">
-        <p class="info">
-            Somos una empresa familiar con 32 años de trayectoria brindando atención y asesoramiento a nuestros
-            clientes. Somos representantes Bayer, con el más completo de stock de toda su línea, tanto en biológicos,
-            grandes y pequeños animales. Contamos con núcleos vitamínicos mineral para bovinos y cerdos de las marcas
-            Teknal y Farmesa. Asesoramiento profesional, Cría, Invernada y Engorde. Administraciones agropecuarias.
-            Brindamos asesoramiento en planes de mejoramiento genético para rodeos de cría, Inseminación artificial.
-        </p>
-    </section>
-    <section class="container-fluid">
+            <div class="mright">
+                <p>
+                    Somos una empresa familiar con 32 años de trayectoria brindando atención y asesoramiento a nuestros
+                    clientes. Somos representantes Bayer, con el más completo de stock de toda su línea, tanto en
+                    biológicos,
+                    grandes y pequeños animales. Contamos con núcleos vitamínicos mineral para bovinos y cerdos de las
+                    marcas
+                    Teknal y Farmesa. Asesoramiento profesional, Cría, Invernada y Engorde. Administraciones
+                    agropecuarias.
+                    Brindamos asesoramiento en planes de mejoramiento genético para rodeos de cría, Inseminación
+                    artificial.
+                </p>
+            </div>
+
+        </section>
+
+    </main>
+  
+
+    <!-- <section class="container-fluid">
         <div class="card-deck container-fluid">
             <div class="card">
                 <a href="secciones/nosotros.html"><img src="fotos/patopedrocard.png" class="card-img-top"
@@ -85,7 +75,8 @@
                 </div>
             </div>
             <div class="card">
-                <a href="secciones/servicios.html"><img src="fotos/vacunacard.jpg" class="card-img-top" alt="servicios" class="img__servicios"></a>
+                <a href="secciones/servicios.html"><img src="fotos/vacunacard.jpg" class="card-img-top" alt="servicios"
+                        class="img__servicios"></a>
                 <div class="card-body">
                     <h5 class="card-title">Servicios</h5>
                 </div>
@@ -98,11 +89,46 @@
                 </div>
 
             </div>
-    </section>
+    </section> -->
 
+    <div id="carouselExampleCaptions" class="carousel slide" data-bs-ride="carousel">
+        <div class="carousel-indicators">
+          <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+          <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1" aria-label="Slide 2"></button>
+          <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2" aria-label="Slide 3"></button>
+        </div>
+        <div class="carousel-inner active">
+          <div class="carousel-item active">
+            <a href="/secciones/nosotros.html"><img src="/fotos/patopedroeco.jpg" class="d-block w-100" alt="nosotros"></a>
+            <div class="carousel-caption d-none d-md-block">
+              <h5>Nosotros</h5>
+            </div>
+          </div>
+          <div class="carousel-item">
+            <a href="/secciones/servicios.html"><img src="/fotos/corn.jpg" class="d-block w-100" alt="servicios"></a>
+            <div class="carousel-caption d-none d-md-block">
+              <h5>Servicios</h5>
+            </div>
+          </div>
+          <div class="carousel-item">
+            <a href="/secciones/contacto.html"><img src="/fotos/vidriera.png" class="d-block w-100" alt="nosotros"></a>
+            <div class="carousel-caption d-none d-md-block">
+              <h5>contacto</h5>
+            </div>
+          </div>
+        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="prev">
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="next">
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Next</span>
+        </button>
+      </div>
     <footer class="footer">
         <div>
-             <a
+            <a
                 href="https://api.whatsapp.com/send?phone=5492266449649&text=Hola!%20Quiero%20hacer%20una%20consulta%20sobre..."><img
                     src="fotos/whatsapp-.png" alt="whatsapp" class="icono"></a>
             <a href="https://www.instagram.com/veterinaria.el.pampa/"><img src="fotos/instagram.png" alt="instagram"
@@ -116,8 +142,8 @@
             <p>Veterinaria El Pampa</p>
             <p>Copyright</p>
         </div>
-           
-        
+
+
     </footer>
 
 

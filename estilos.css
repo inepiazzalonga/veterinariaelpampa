@@ -1,7 +1,68 @@
-main {
-    height: 100%;
+body{
+    background-color: gainsboro;
 }
 
+.logo{
+    width: 8em;
+    height: 8em;
+    margin-top: 1em;
+    margin-left: 1em;
+}
+
+.navbar{
+    background-color: gainsboro;
+}
+
+
+#navbarNav{
+    text-align: end;
+    margin-right: 1em;
+}
+
+.navbar-toggler:hover{
+    background-color: rgb(119, 117, 117);
+}
+
+main{
+    width: 100%;
+    background-color: rgb(119, 117, 117)
+}
+
+.jumbotron{
+    width: 100%;
+    height: 40em;
+    background-image: url(/fotos/trigo.jpg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+   align-items: center;
+   justify-content: center;
+}
+
+.container p{
+    width: 70%;
+    background-color: rgb(11, 11, 59);
+    color: cornsilk;
+    padding: 2em;
+    text-align: justify;
+    margin-left: 9em;
+    margin-top: 6em;   
+}
+
+.container button{
+    background-color: cornsilk;
+    color: rgb(11, 11, 59);
+    text-align: center;
+    margin-left: 30em;
+    text-decoration: none;
+}
+
+.container button:hover{
+    transform: scale(1.2);
+    transition-duration: 0.2s;
+    text-decoration: none;
+    color: currentColor;
+}
 
 .index{
     height: 40em;
@@ -36,31 +97,30 @@ main {
     margin-top: 13em;   
 }
 
-.carousel-inner{
-    width: 98%;
-    height: 35em;
-    margin-left: 1em;
-    margin-top: 1em;
-}
-
 .card {
-    margin-top: 10em;
+    margin-top: 5em;
     text-align: center;
     border: none;
     align-items: center;
+    background-color: gainsboro;
 
 }
 
 .card a {
     width: 20em;
     height: 20em;
-
 }
 
 .card h5 {
     color: grey;
     text-align: center;
     font-size: 15px;
+}
+
+
+.snapwidget-widget{
+    width: 50%;
+    height: auto;
 }
 
 .footer {

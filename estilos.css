@@ -1,136 +1,109 @@
-body{
-    background-color: gainsboro;
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@200;500&family=Open+Sans:wght@300&family=Poppins:wght@200&family=Raleway:wght@200&display=swap');
+
+* {
+    margin: 0%;
+    padding: 0%;
 }
 
-.logo{
-    width: 8em;
-    height: 8em;
-    margin-top: 1em;
+body {
+    background-color: #f8f9fa;
+}
+
+.logo {
+    width: 6em;
+    height: 6em;
+    margin-top: 0.5em;
     margin-left: 1em;
 }
 
-.navbar{
-    background-color: gainsboro;
-}
-
-
-#navbarNav{
+#navbarNav {
     text-align: end;
     margin-right: 1em;
+    justify-content: end;
 }
 
-.navbar-toggler:hover{
-    background-color: rgb(119, 117, 117);
+.navbar-toggler:hover {
+    background-color: rgb(63, 60, 60);
 }
 
-main{
+.intro {
+    background-color: #f8f9fa;
+    display: flex;
+    flex-direction: column;
+
+}
+
+.intro p {
     width: 100%;
-    background-color: rgb(119, 117, 117)
+    font-size: 22px;
+    text-align: center;
+    padding: 1em;
+    margin-top: 4em;
+    font-family: 'Raleway', sans-serif;
+    color: grey;
+    text-decoration: gray;
+    background: -webkit-linear-gradient(rgb(126, 28, 28), rgb(18, 12, 51));
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+
 }
 
-.jumbotron{
+.jumbotron {
     width: 100%;
-    height: 40em;
+    height: 20em;
     background-image: url(/fotos/trigo.jpg);
     background-size: cover;
-    background-position: center;
+    background-position: bottom;
     background-repeat: no-repeat;
-   align-items: center;
-   justify-content: center;
+    align-items: center;
+    justify-content: center;
 }
 
-.container p{
-    width: 70%;
-    background-color: rgb(11, 11, 59);
-    color: cornsilk;
+.indexInfo {
+    background-color: #cacffa;
+    display: flex;
+    flex-direction: column;
+    height: fit-content;
+    border-top-left-radius: 6%;
+    border-top-right-radius: 6%;
+    align-items: center;
+}
+
+.veterinaria {
+    width: 100%;
+    flex-direction: column;
+    padding: 2em;
+    color: rgb(107, 105, 95);
+    text-align: justify;
+}
+
+.veterinaria h3 {
+    font-family: 'Raleway', sans-serif;
+    background: -webkit-linear-gradient(rgb(126, 28, 28), rgb(16, 8, 65));
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.infoTrabajo {
+    width: 100%;
+    color: rgb(107, 105, 95);
     padding: 2em;
     text-align: justify;
-    margin-left: 9em;
-    margin-top: 6em;   
-}
-
-.container button{
-    background-color: cornsilk;
-    color: rgb(11, 11, 59);
-    text-align: center;
-    margin-left: 30em;
-    text-decoration: none;
-}
-
-.container button:hover{
-    transform: scale(1.2);
-    transition-duration: 0.2s;
-    text-decoration: none;
-    color: currentColor;
-}
-
-.index{
-    height: 40em;
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-  
-}
-
-.mleft{
-    height: 40em;
-    width: 50%;
-    background-image: url(/fotos/vacascampo.jpg);
-    background-size: contain;
-    background-repeat: no-repeat;
-    margin-left: 1em;
-}
-
-.mright{
-    width: 50%;
-    height: 40em;
-    background-color: rgb(7, 7, 39);
-    margin-right: 1em;
-}
-
-.mright p{
-    height: 19em;
-    text-align: justify;
-    justify-content: center;
-    padding: 3em;
-    color: rgb(218, 218, 218);
-    margin-top: 13em;   
-}
-
-.card {
-    margin-top: 5em;
-    text-align: center;
-    border: none;
     align-items: center;
-    background-color: gainsboro;
-
 }
 
-.card a {
-    width: 20em;
-    height: 20em;
-}
-
-.card h5 {
-    color: grey;
-    text-align: center;
-    font-size: 15px;
-}
-
-
-.snapwidget-widget{
-    width: 50%;
-    height: auto;
+.btn:hover {
+    transform: scale(1.1);
 }
 
 .footer {
     width: 100%;
-    background-color: whitesmoke;
+    background-color: rgb(143, 143, 143);
 }
 
 .footer div {
     width: 100%;
-    color: rgb(170, 170, 170);
+    color: rgb(223, 219, 219);
     font-family: 'Montserrat', sans-serif;
     font-size: 10px;
     margin-bottom: 1em;
@@ -138,41 +111,644 @@ main{
 
 .footer p {
     margin-left: 1em;
+    margin-bottom: 1em;
 }
 
 .icono {
-    width: 2em;
-    height: 2em;
+    width: 2.5em;
+    height: 2.5em;
     margin-top: 1em;
     margin-left: 2em;
     margin-bottom: 0.5em;
 }
 
 h2 {
-    width: 100%;
-    height: 2em;
+    font-size: 45px;
     text-align: center;
-    background-color: rgb(7, 7, 39);
-    color: whitesmoke;
-    font-weight: lighter;
+    margin-left: 1em;
+    margin-bottom: 1em;
+    font-family: 'Raleway', sans-serif;
+    color: grey;
+    text-decoration: gray;
+    background: -webkit-linear-gradient(rgb(126, 28, 28), rgb(18, 12, 51));
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
 }
 
-.row {
-    margin-top: 1em;
+.nombre {
+    font-size: 30px;
+    text-align: center;
+    font-family: 'Raleway', sans-serif;
+    background: -webkit-linear-gradient(rgb(88, 86, 86), rgb(81, 79, 92));
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
 }
 
-.card-title {
-    font-size: 2em;
+.nosotros {
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 
-.card-text {
-    font-size: 1.2em;
+.nosotros p {
+    font-size: 20px;
+}
+
+.walter {
+   width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    overflow: hidden;
+    height: auto;
+    background-color: #cacffa;
+    margin-bottom: 1em;
+   
+}
+
+
+.walter__texto {
+    width: 100%;
+    height: fit-content;
+   padding: 2em;
+    margin-left: 0%;
+    color: rgb(77, 75, 75);
     text-align: justify;
 }
 
-form {
-    background-color: rgb(7, 7, 39);
-    color: whitesmoke;
-    margin-top: 1em;
+
+.walter__imagen {
+    width: 90%;
+    height: auto;
+    margin-left: 1em;
     margin-bottom: 1em;
+  
+}
+
+.walter__imagen img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.patricio {
+    
+    display: flex;
+    flex-direction: column-reverse;
+    flex-wrap: wrap;
+    height: fit-content;
+    background-color: #cacffa;
+}
+
+
+.patricio__texto {
+    width: 100%;
+    height: fit-content;
+    padding: 2em;
+    margin-top: 4em;
+    color: rgb(77, 75, 75);
+    text-align: justify;
+}
+
+.patricio__imagen {
+    width: 90%;
+    height: auto;
+    margin-top: 2em;
+    margin-left: 1em;
+
+}
+
+.patricio__imagen img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    margin-bottom: 1em;
+
+}
+
+.ariel {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    overflow: hidden;
+    height: auto;
+    margin-top: 1em;
+    background-color: #cacffa;
+ 
+}
+
+
+.ariel__texto {
+    width: 100%;
+    height: fit-content;
+    padding: 3em;
+    color: rgb(77, 75, 75);
+    text-align: justify;
+}
+
+
+.ariel__imagen {
+    width: 90%;
+    height: auto;
+    margin-bottom: 2em;
+    margin-top: 2em;
+    margin-left: 2em;
+
+}
+
+.ariel__imagen img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+
+}
+
+.instagram {
+    width: 100%;
+    margin-left: 0%;
+}
+
+.seguinos h3 {
+    margin-top: 0.5em;
+    font-size: 35px;
+    text-align: center;
+    font-family: 'Raleway', sans-serif;
+    color: grey;
+    background: -webkit-linear-gradient(rgb(126, 28, 28), rgb(18, 12, 51));
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.seguinos h3:hover {
+    transform: scale(1.01);
+    text-decoration: none;
+}
+
+
+
+.asesoramiento {
+    display: flex;
+    flex-direction: column;
+    background-color: #cacffa;
+    margin: 2em 2em 2em 2em;
+
+}
+
+.asesoramiento img {
+    width: 100%;
+    height: auto;
+}
+
+.asesoramiento p {
+    width: 100%;
+    height: auto;
+    color: rgb(77, 75, 75);
+    text-align: justify;
+    padding: 2em;
+    margin-top: 1em;
+}
+
+.sectionServicios {
+    width: 100%;
+    background-color: #cacffa;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 1em;
+    margin-left: 0%;
+}
+
+.serv__foto {
+    width: 100%;
+    height: auto;
+    margin-bottom: 1em;
+    padding: 1em;
+}
+
+.serv__titulo {
+    font-family: 'Poppins', sans-serif;
+    font-size: 25px;
+    color: rgb(77, 75, 75);
+    text-align: center;
+    padding: 5px;
+}
+
+.serv__info {
+    width: 90%;
+    background-color: rgb(189, 189, 189);
+    font-family: 'Poppins', sans-serif;
+    font-size: 15px;
+    color: rgb(77, 75, 75);
+    align-items: center;
+    padding: 1em;
+    text-align: justify;
+    margin-bottom: 1em;
+}
+
+.serv__info:hover {
+    transform: scale(1.1);
+}
+
+.sanidad {
+    width: 100%;
+    grid-area: sanidad;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 2em;
+}
+
+.reproduccion {
+    margin-top: 2em;
+    width: 100%;
+    grid-area: reproduccion;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.analisis {
+    grid-area: analisis;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.analisis img {
+    width: 60%;
+}
+
+.venta {
+    width: 100%;
+    grid-area: venta;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 1em;
+}
+
+.venta img {
+    height: 20em;
+    width: auto;
+}
+
+
+.contacto__page {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 1em;
+}
+
+.mapa {
+    width: 100%;
+    height: 30em;
+    padding: 1em;
+}
+
+.formulario {
+    background-color: #cacffa;
+    width: 100%;
+    height: auto;
+    padding: 1em;
+    font-size: 15px;
+    font-family: 'Poppins', sans-serif;
+}
+
+.formulario__input {
+    margin-top: 2em;
+    margin-left: 1em;
+    width: 100%;
+    color: rgb(44, 42, 42);
+}
+
+.input {
+    width: 65%;
+    margin-left: 1em;
+}
+
+#consulta {
+    width: 50%;
+}
+
+.formulario__consulta {
+    width: 90%;
+    font-size: 15px;
+    font-family: 'Poppins', sans-serif;
+}
+
+.enviar {
+    width: 80%;
+    font-size: 15px;
+    font-family: 'Poppins', sans-serif;
+}
+
+
+@media screen and (min-width:601px) {
+    .logo {
+        width: 6em;
+        height: 6em;
+    }
+
+
+    .intro {
+        display: flex;
+        flex-direction: row;
+
+    }
+
+    .intro p {
+        width: 50%;
+        font-size: 25px;
+        text-align: center;
+        padding: 1em;
+        margin-top: 2em;
+    }
+
+    .jumbotron {
+        width: 50%;
+        height: 20em;
+    }
+
+    .indexInfo {
+        display: flex;
+        flex-direction: row;
+        height: fit-content;
+    }
+
+    .veterinaria {
+        width: 50%;
+        flex-direction: column;
+        padding: 2em;
+        margin-top: 0%;
+    }
+
+    .infoTrabajo {
+        width: 50%;
+        padding: 2em;
+    }
+
+    h2 {
+        font-size: 40px;
+    }
+
+    .nombre {
+        font-size: 30px;
+        text-align: center;
+    }
+
+    .nosotros {
+        grid-area: nosotros;
+        width: 100%;
+        height: auto;
+        display: flex;
+        flex-direction: column;
+
+    }
+    
+    .nosotros p {
+        font-size: 20px;
+    }
+    
+    .walter {
+      width: 90%;
+        display: flex;
+        flex-direction: row;
+        flex-wrap: nowrap;
+        overflow: hidden;
+        height: auto;
+        background-color: #cacffa;
+    }
+    
+    .walter__texto {
+        width: 60%;
+        height: 400px;
+        padding: 2em;
+        margin-left: 0%;
+        color: rgb(77, 75, 75);
+        text-align: justify;
+    }
+    
+    .walter__imagen {
+        width: 40%;
+        height: auto;
+        margin-left: 1em;
+        margin-right: 1em;
+        margin-top: 1em;
+        margin-bottom: 1em;
+    }
+
+
+    
+    .patricio {
+        width: 90%;
+        grid-area: patricio;
+        display: flex;    
+        flex-wrap: nowrap;
+        flex-direction: row;
+        height: auto;
+        background-color: #cacffa;
+    }
+    
+    .patricio__texto {
+        width: 60%;
+        height: 500px;
+        padding: 2em;
+        color: rgb(77, 75, 75);
+        text-align: justify;
+    }
+    
+    .patricio__imagen {
+        width: 450px;
+        height: 450px;
+        margin-top: 4em;
+        margin-left: 1em;
+    }
+    
+    .ariel {
+        width: 90%;
+        grid-area: ariel;
+        display: flex;
+        flex-direction: row;
+        flex-wrap: nowrap;
+        overflow: hidden;
+        height: auto;
+        background-color: #cacffa;
+    }
+    
+    .ariel__texto {
+        width: 40%;
+        height: 500px;
+        padding: 3rem 2rem 2rem 2rem;
+        margin-left: 10%;
+        color: rgb(77, 75, 75);
+        text-align: justify;
+    }
+    
+    .ariel__imagen {
+        width: 450px;
+        height: 450px;
+        margin-bottom: 2em;
+        margin-top: 2em;
+        margin-left: 2em;
+    
+    }
+    
+    .instagram {
+        width: 85%;
+        margin-left: 7em;
+    }
+    
+    .seguinos h3 {
+        font-size: 40px;
+        text-align: center;
+        font-family: 'Raleway', sans-serif;
+        color: grey;
+        background: -webkit-linear-gradient(rgb(126, 28, 28), rgb(18, 12, 51));
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+    }
+    
+    .seguinos a:hover {
+        transform: scale(1.01);
+        text-decoration: none;
+    }
+    
+
+    .sectionServicios {
+        width: 100%;
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 1fr 1fr;
+        grid-template-areas: 
+        "sanidad reproduccion"
+        "analisis venta";
+        align-items: center;
+        border-radius: 0%;
+    }
+
+    .serv__foto {
+        width: 30em;
+        height: auto;
+        margin-bottom: 1em;
+    }
+
+
+    .serv__info {
+        width: 90%;
+    }
+
+    .sanidad {
+        grid-area: sanidad;
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .reproduccion {
+        grid-area: reproduccion;
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+  
+
+    .analisis {
+        grid-area: analisis;
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .analisis img {
+        width: 90%;
+    }
+
+    .venta {
+        grid-area: venta;
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .venta img {
+        height: 25em;
+        width: auto;
+    }
+
+    .asesoramiento {
+        display: flex;
+        flex-direction: row;
+        border-radius: 0%;
+        width: 90%;
+        align-items: center;
+        margin-left: 4em;
+
+    }
+
+    .asesoramiento img {
+        width: 50%;
+        height: auto;
+    }
+
+    .asesoramiento p {
+        width: 55%;
+        height: auto;
+        margin-top: 1em;
+    }
+
+    .contacto__page {
+        display: flex;
+        flex-direction: row;
+        margin-bottom: 1em;
+    }
+    
+    .mapa {
+        border-radius: 0%;
+        width: 50%;
+        height: 30em;
+        margin-left: 0%;
+    }
+    
+    .formulario {
+        border-radius: 0%;
+        width: 50%;
+        height: auto;
+        margin-left: 0%;
+        padding: 1em;
+    }
+    
+    .formulario__input {
+        margin-top: 1em;
+        margin-left: 0%;
+        width: 100%;
+    }
+    
+    .input {
+        width: 70%;
+       
+    }
+    
+    #consulta {
+        width: 50%;
+    }
+    
+    .formulario__consulta {
+        width: 90%;
+        font-size: 15px;
+    }
+    
+    .enviar {
+        width: 90%;
+    }
+    
+} 
+
+@media screen and (min-width:601px) {
+    
 }

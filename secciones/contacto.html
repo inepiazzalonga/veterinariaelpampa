@@ -15,7 +15,7 @@
 <body>
     <header>
         <nav class="navbar navbar-expand-lg navbar-light bg-light">
-            <a class="navbar-brand" href="#"><img src="../fotos/logo2.png" alt="logo"></a>
+            <a class="navbar-brand" href="#"><img src="../fotos/logo2.png" alt="logo" class="logo"></a>
             <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
                 aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
@@ -44,64 +44,39 @@
     <main>
         <h2>Contacto</h2>
 
-        <section class="formulario">
+        <section class="contacto__page">
+            <iframe
+                src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d12603.255494494995!2d-58.261798!3d-37.841243!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0xc8f11bad8dd50608!2sVeterinaria%20El%20Pampa!5e0!3m2!1ses-419!2sar!4v1638448785877!5m2!1ses-419!2sar"
+                width="500" height="400" style="border:0;" allowfullscreen="" loading="lazy" class="mapa"></iframe>
+            <div class="formulario">
+                <div class="formulario__input">
+                    <form action="contacto.html" method="get" enctype="application/x-www-form-urlencoded"></form>
+                    <label for="nombre"> Nombre</label>
+                    <input type="text" required class="input"><br>
+                    <label for="telefono"> Teléfono</label>
+                    <input type="tel" required class="input"><br>
+                    <label for="mail"> Mail</label>
+                    <input type="mail" required class="input"><br>
+                    <label for="consulta">Tipo de consulta</label>
+                    <select name="consulta" id="consulta">
+                        <optgroup label="Tipo de consulta">
+                            <option value="asesoramiento">Asesoramiento</option>
+                            <option value="reproduccion">Reproducción</option>
+                            <option value="sanidad">Sanidad</option>
+                            <option value="venta">Venta de insumos</option>
+                        </optgroup>
 
-            <form class="container d-flex flex-column justify-content-center align-items-center backgroundColorAzul">
-
-                <div class="bootFormulario container-fluid row">
-
-                    <div class="contactoSeccionIzquierda git-lg-6 col-md-6 col-sm-12">
-                        <div class="form-group d-flex flex-column">
-                            <label for="nombre-completo">Nombre completo: </label>
-                            <input type="text" name="nombre-completo" placeholder="Nombre completo">
-                        </div>
-                        <div class="form-group d-flex flex-column">
-                            <label for="email">Email: </label>
-                            <input type="email" name="email" placeholder="Email">
-                        </div>
-
-                        <div class="form-group d-flex flex-column">
-                            <label for="telefono">Teléfono/s: </label>
-                            <input type="tel" name="telefono" placeholder="Tel sin 0 y sin 15">
-                        </div>
-                        <div class="form-group d-flex flex-column">
-                            <label for="tipoDeConsulta">¿Que tipo de consulta? </label>
-                            <select name="tipoDeConsulta">
-                                <option value="Asesoramiento">Asesoramiento</option>
-                                <option value="Reproducción">Reproducción</option>
-                                <option value="Venta de insumos">Venta de insumos</option>
-                            </select>
-                        </div>
-
-                    </div>
-
-                    <div class="contactoSeccionDerecha col-lg-6 col-md-6 col-sm-12">
-                        <div class="form-group d-flex flex-column">
-                            <label for="consulta">Tu Consulta: </label>
-                            <textarea name="consulta" id="consulta" cols="30"
-                                rows="8">Escriba su consulta</textarea>
-                        </div>
-                        <p>Rellena el formulario para que podamos contactar contigo. Nos pondremos en contacto contigo con la mayor brevedad posible.</p>
-
-                    </div>
-
+                    </select>
+                    <textarea name="consulta" id="" cols="30" rows="10"
+                        class="formulario__consulta"> Escriba su consulta</textarea><br>
+                    <input type="submit" Enviar class="enviar"><br>
                 </div>
-
-                <input type="submit" value="Enviar" id="submit" class=" submit">
-
-            </form>
-
-        </section>
-        
-        <section class="container  text-center direccion letraColorAzul">
-
-            <div style="width: 100%">
-                <iframe width="100%" height="400" frameborder="0" scrolling="no" marginheight="0" marginwidth="0"
-                src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d12603.255494494995!2d-58.261798!3d-37.841243!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0xc8f11bad8dd50608!2sVeterinaria%20El%20Pampa!5e0!3m2!1ses-419!2sar!4v1640260309009!5m2!1ses-419!2sar"></iframe>
             </div>
 
         </section>
-        
+    </main>
+
+
     </main>
 
     <footer class="footer">

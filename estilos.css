@@ -71,7 +71,7 @@ body {
 
 
 .indexInfo {
-    background-color: #cacffa;
+    background-color: rgb(247, 241, 227);
     display: flex;
     flex-direction: column;
     height: fit-content;
@@ -114,7 +114,7 @@ body {
 
 .footer {
     width: 100%;
-    background-color: #9a9ec2;
+    background-color: rgb(107, 105, 95);
 }
 
 
@@ -185,7 +185,7 @@ h2 {
     flex-wrap: wrap;
     overflow: hidden;
     height: auto;
-    background-color: #cacffa;
+    background-color: rgb(247, 241, 227);
     margin-bottom: 1em;
 }
 
@@ -224,7 +224,7 @@ h2 {
     flex-direction: column-reverse;
     flex-wrap: wrap;
     height: fit-content;
-    background-color: #cacffa;
+    background-color: rgb(247, 241, 227);
 }
 
 .patricio__texto {
@@ -260,7 +260,7 @@ h2 {
     overflow: hidden;
     height: auto;
     margin-top: 1em;
-    background-color: #cacffa;
+    background-color: rgb(247, 241, 227);
 }
 
 
@@ -314,13 +314,14 @@ h2 {
 .asesoramiento {
     display: flex;
     flex-direction: column;
-    background-color: #cacffa;
+    background-color: rgb(247, 241, 227);
     margin: 2em 2em 2em 2em;
 }
 
 .asesoramiento img {
     width: 100%;
     height: auto;
+    padding: 1em;
 }
 
 
@@ -330,7 +331,6 @@ h2 {
     color: rgb(77, 75, 75);
     text-align: justify;
     padding: 2em;
-    margin-top: 1em;
     font-size: 18px;
     font-family: 'Raleway', sans-serif;
 }
@@ -338,11 +338,10 @@ h2 {
 
 .sectionServicios {
     width: 100%;
-    background-color: #dde1ff;
     display: flex;
     flex-direction: column;
     align-items: center;
-  
+
 }
 
 
@@ -365,14 +364,13 @@ h2 {
 
 .serv__info {
     width: 90%;
-    background-color: rgb(238, 236, 236);
     font-family: 'Raleway', sans-serif;
     font-size: 15px;
-    color: rgb(77, 75, 75);
-    align-items: center;
+    color: rgb(85, 84, 83);
     padding: 1em;
     text-align: justify;
     margin-bottom: 1em;
+    margin-left: 2em;
 }
 
 
@@ -382,30 +380,35 @@ h2 {
 
 
 .sanidad {
+    background-color: rgb(247, 241, 227);
     width: 100%;
     grid-area: sanidad;
     display: flex;
     flex-direction: column;
     align-items: center;
     margin-top: 2em;
+    margin-bottom: 1em;
 }
 
 
 .reproduccion {
-    margin-top: 2em;
+    background-color: rgb(247, 241, 227);
     width: 100%;
     grid-area: reproduccion;
     display: flex;
     flex-direction: column;
     align-items: center;
+    margin-bottom: 1em;
 }
 
 
 .analisis {
+    background-color: rgb(247, 241, 227);
     grid-area: analisis;
     display: flex;
     flex-direction: column;
     align-items: center;
+    margin-bottom: 1em;
 }
 
 
@@ -415,6 +418,7 @@ h2 {
 
 
 .venta {
+    background-color: rgb(247, 241, 227);
     width: 100%;
     grid-area: venta;
     display: flex;
@@ -447,10 +451,10 @@ h2 {
 
 
 .formulario {
-    background-color: #cacffa;
+    background-color: rgb(247, 241, 227);
     width: 100%;
     height: auto;
-    padding: 1em;
+    padding: 2em;
     font-size: 15px;
     font-family: 'Poppins', sans-serif;
 }
@@ -492,7 +496,7 @@ h2 {
 
 
 @media screen and (min-width:601px) {
- 
+
 
     .intro p {
         width: 100%;
@@ -509,7 +513,7 @@ h2 {
         font-size: 18px;
     }
 
-    .walter__imagen img{
+    .walter__imagen img {
         margin-left: 1em;
     }
 
@@ -523,7 +527,7 @@ h2 {
         margin-top: 1em;
     }
 
-    .patricio__imagen img{
+    .patricio__imagen img {
         margin-left: 1em;
     }
 
@@ -542,7 +546,7 @@ h2 {
         width: 90%;
     }
 
-    .ariel__imagen img{
+    .ariel__imagen img {
         margin-top: 0%;
     }
 
@@ -551,7 +555,7 @@ h2 {
         margin-left: 1em;
     }
 
-    .sectionServicios{
+    .sectionServicios {
         width: 100%;
         border-radius: 0%;
         display: flex;
@@ -559,18 +563,29 @@ h2 {
         align-items: center;
     }
 
-    .servicios{
+    .serv__info {
+        width: 90%;
+        margin-left: 0%;
+        margin-top: 0%;
+    }
+
+    .serv__titulo {
+        margin-top: 0%;
+        margin-bottom: 0%;
+    }
+
+    .servicios {
         display: flex;
         flex-direction: column;
         align-items: center;
     }
 
-    .analisis img{
+    .analisis img {
         width: 100%;
         height: auto;
     }
 
-    .venta img{
+    .venta img {
         width: 100%;
         height: auto;
     }
@@ -619,7 +634,7 @@ h2 {
         padding: 2em;
     }
 
-    .footer div{
+    .footer div {
         height: 17em;
     }
 
@@ -649,9 +664,7 @@ h2 {
         display: flex;
         flex-direction: row;
         flex-wrap: nowrap;
-        overflow: hidden;
-        height: auto;
-        background-color: #cacffa;
+        height: fit-content;
         margin-right: 7em;
         border-top-right-radius: 5%;
         border-bottom-right-radius: 5%;
@@ -660,33 +673,29 @@ h2 {
     .walter__texto {
         width: 60%;
         height: 400px;
-        padding: 2em;
-        margin-left: 0%;
-        color: rgb(77, 75, 75);
+        padding: 1em;
+        margin-left: 1em;
         text-align: justify;
+        font-size: 19px;
     }
 
     .walter__imagen {
         width: 40%;
         height: auto;
-        margin-left: 1em;
+        margin-left: 0%;
         margin-right: 1em;
         margin-top: 1em;
         margin-bottom: 1em;
         padding: 1em;
     }
 
-
-
-
-
     .patricio {
         width: 90%;
+        height: fit-content;
         grid-area: patricio;
         display: flex;
         flex-wrap: nowrap;
         flex-direction: row;
-        background-color: #cacffa;
         margin-left: 7em;
         border-top-left-radius: 5%;
         border-bottom-left-radius: 5%;
@@ -694,14 +703,15 @@ h2 {
 
     .patricio__texto {
         width: 60%;
-        padding: 2em;
+        padding: 1em;
         text-align: justify;
+        margin-top: 1.5em;
     }
 
     .patricio__imagen {
         width: 450px;
         height: 450px;
-       padding: 1em;
+        padding: 1em;
     }
 
     .ariel {
@@ -710,43 +720,35 @@ h2 {
         flex-direction: row;
         flex-wrap: nowrap;
         overflow: hidden;
-        height: auto;
+        height: fit-content;
         margin-right: 7em;
         border-top-right-radius: 5%;
         border-bottom-right-radius: 5%;
     }
 
     .ariel__texto {
-        width: 40%;
+        width: 60%;
         height: 500px;
-        padding: 3rem 2rem 2rem 2rem;
-        margin-left: 10%;
-        color: rgb(77, 75, 75);
+        padding: 1em;
+        margin-left: 1em;
+    margin-top: 1.5em;
         text-align: justify;
     }
 
     .ariel__imagen {
         width: 450px;
         height: 450px;
-        margin-bottom: 2em;
-        margin-top: 2em;
-        margin-left: 2em;
-
+     padding: 1em;
     }
 
     .instagram {
         width: 85%;
-        margin-left: 7em;
+        margin-left: 5em;
     }
 
     .seguinos h3 {
         font-size: 40px;
         text-align: center;
-        font-family: 'Raleway', sans-serif;
-        color: grey;
-        background: -webkit-linear-gradient(rgb(126, 28, 28), rgb(18, 12, 51));
-        -webkit-background-clip: text;
-        -webkit-text-fill-color: transparent;
     }
 
     .seguinos a:hover {
@@ -754,30 +756,29 @@ h2 {
         text-decoration: none;
     }
 
-
-
     .sectionServicios {
         width: 100%;
         display: flex;
         flex-direction: column;
-        justify-content: center;
-        border-radius: 0%;
-        background-color: #fff;
+        justify-content: center; 
     }
 
-.servicios{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-}
+    .servicios {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
     .serv__foto {
-      width: auto;
+        width: auto;
         height: 25em;
         margin-bottom: 1em;
         padding: 1em;
     }
+
     .serv__info {
         width: 70%;
+        font-size: 19px;
     }
 
 
@@ -787,7 +788,6 @@ h2 {
         display: flex;
         flex-direction: row;
         align-items: center;
-        background-color: #cacffa;
         border-radius: 5%;
         margin-right: 9em;
     }
@@ -799,7 +799,6 @@ h2 {
         display: flex;
         flex-direction: row-reverse;
         align-items: center;
-        background-color: #cacffa;
         border-radius: 5%;
         margin-left: 9em;
         margin-top: 1em;
@@ -811,7 +810,6 @@ h2 {
         display: flex;
         flex-direction: row;
         align-items: center;
-        background-color: #cacffa;
         border-radius: 5%;
         margin-right: 9em;
         margin-top: 1em;
@@ -830,7 +828,6 @@ h2 {
         display: flex;
         flex-direction: row-reverse;
         align-items: center;
-        background-color: #cacffa;
         border-radius: 5%;
         margin-left: 9em;
         margin-top: 1em;
@@ -863,7 +860,7 @@ h2 {
     }
 
     .asesoramiento p {
-       width: 60%;
+        width: 60%;
         margin-top: 1em;
     }
 

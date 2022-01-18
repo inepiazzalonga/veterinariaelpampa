@@ -1,0 +1,59 @@
+.contacto__page {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin-bottom: 2em;
+
+    .mapa {
+        width: 50%;
+        height: 47em;
+        margin-left: 2em;
+    }
+
+    .formulario {
+        width: 50%;
+        height: fit-content;
+        background-color: $color3;
+        margin-left: 1em;
+        margin-right: 1em;
+    }
+
+    .formulario__input {
+        width: 85%;
+        margin-top: 1em;
+        margin-left: 3em;
+        display: flex;
+        flex-direction: column;
+        @include textos;
+
+        textarea {
+            margin-top: 1em;
+        }
+
+        .enviar:hover {
+            @include buttonHover;
+        }
+    }
+
+    @media screen and (min-width:375px) {
+        @include mobile;
+
+        .contacto__page {
+            width: 100%;
+        }
+
+        .mapa {
+            width: 100%;
+            margin-bottom: 1em;
+        }
+
+        .formulario {
+            width: 100%;
+            margin-left: 2.5em;
+        }
+    }
+
+    @media screen and (min-width:900px) {
+        @include desktop();
+    }
+}

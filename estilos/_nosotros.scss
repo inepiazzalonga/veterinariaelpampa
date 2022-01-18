@@ -1,0 +1,108 @@
+
+
+.nosotros {
+    display: flex;
+    flex-direction: column;
+    background-color: $color1;
+    width: 100%;
+
+    .info {
+        width: 80%;
+        display: flex;
+        flex-direction: row;
+        margin-top: 2em;
+        justify-content: space-between;
+        background-color: $color3;
+
+
+        .info__nombre {
+            @include texto-index;
+    
+        }
+
+        .info__texto {
+            width: 50%;
+            @include textos;
+            padding: 1em;
+            margin-left: 1em;
+        }
+
+        .info__imagen {
+            width: 50%;
+            height: auto;
+            padding: 1em;
+
+            img {
+                width: 25em;
+                height: auto;
+            }
+        }
+
+        @media screen and (min-width:375px) {
+            @include mobile;
+            width: 100%;
+            .info__nombre{
+                width: 100%;
+            }
+            .info__imagen{
+                width: 90%;
+            }
+            .info__texto{
+                width: 100%;
+            }
+        }
+    }
+
+    .patricio {
+        @extend .info;
+        margin-left: 17em;
+
+        .patricio__nombre {
+            @extend .info__nombre;
+        }
+
+        .patricio__texto {
+            @extend .info__texto;
+            margin-right: 2em;
+        }
+
+        .patricio__imagen {
+            @extend .info__imagen;
+        }
+
+        @media screen and (min-width:375px) {
+            @include mobile;
+
+            .info {
+                width: 100%;
+                margin: 0%;
+                .patricio__imagen{
+                    width: 100%;
+                }
+                .patricio__nombre{
+                    width: 100%;
+                }
+                .patricio__texto{
+                    width: 100%;
+                }
+            }
+        }
+        @media screen and (min-width:900px) {
+            @include desktop();
+        }
+    }
+
+
+}
+
+.seguinos {
+    margin-top: 3em;
+    font-size: map-get($fontSizes, "medium");
+    @include textos;
+    text-align: center;
+}
+
+.instagram {
+    width: 80%;
+    margin-left: 10em;
+}

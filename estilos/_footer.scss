@@ -3,20 +3,21 @@
     height: fit-content;
     background-color: $color5;
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
     justify-content: space-between;
     padding: 1em;
 
     .footer1 {
         display: flex;
         flex-direction: row;
-        justify-content: start;
+        justify-content: space-around;
 
         .logoFooter {
             display: flex;
             flex-direction: column;
             align-items: center;
             margin-top: 4em;
+            margin-left: 2em;
 
             img {
                 width: 7em;
@@ -35,7 +36,7 @@
             flex-direction: column;
             align-items: center;
             margin-top: 1em;
-            margin-left: 1em;
+            
             @include borderFooter;
 
             a {
@@ -48,12 +49,12 @@
 
     }
 
-
     .footer2 {
         display: flex;
         flex-direction: row;
-        justify-content: flex-end;
+        justify-content: space-between;
         margin-top: 2em;
+        padding: 1em;
 
         .suscribe {
             border-left: red;
@@ -92,14 +93,21 @@
         }
 
     }
-    @media screen and (min-width:375px) {
-        @include mobile();
-        justify-content: space-evenly;
-        width: 100%;
-    }
 
-    @media screen and (min-width:900px) {
-        @include desktop();
+}
+
+@media screen and (min-width: 601px) {
+    .footer{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+    }
+}
+
+@media screen and (min-width: 901px) {
+    .footer{
+        display: flex;
+        flex-direction: row;
         justify-content: space-between;
     }
 }

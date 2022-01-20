@@ -3,33 +3,32 @@
     flex-direction: column;
 
     .sanidad{
-        width: 80%;
+        width: 90%;
         display: flex;
-        flex-direction: row;
+        flex-direction: column;
         align-items: center;
-        justify-content: space-around;
         background-color: $color3;
         margin-top: 2em;
+        margin-left: 1.5em;
 
         .serv__foto{
-            width: 30%;
-            margin-left: 2em;
+            width: 90%;
             padding: 1em;
         }
 
         .serv__titulo{
             @include texto-index;
-            margin-top: 1em;
+            padding: 0%;
         }
 
         .servicios{
-            width: 50%;
+            width: 100%;
             display: flex;
             flex-direction: column;
 
             p{
                 @include textos;
-                padding: 2em;
+                padding: 1em;
                 margin-top: 0%;
             }
         }
@@ -37,8 +36,6 @@
 
     .reproduccion{
         @extend .sanidad;
-        flex-direction: row-reverse;
-        margin-left: 16em;
     }
 
     .analisis{
@@ -46,11 +43,48 @@
     }
 
     .venta{
-        @extend .reproduccion;
+        @extend .sanidad;
+        margin-bottom: 1em;
 
       .venta__foto{
+          margin-top: 1em;
           width: 25em;
           height: auto;
       }
     }
+}
+
+@media screen and (min-width: 901px) {
+.sectionServicios{
+    .sanidad{
+        display: flex;
+        flex-direction: row;
+        width: 80%;
+        height: fit-content;
+        margin-left: 1em;
+        .servicios{
+            width: 50%;
+            .serv__titulo{
+                margin-top: 1em;
+            }
+            p{
+                padding: 2em;
+                padding-top: 0%;
+            }
+        }
+        .serv__foto{
+            width: 50%;
+        }
+    }
+    .reproduccion{
+        margin-left: 15em;
+    }
+    .venta{
+        @extend .reproduccion;
+        margin-bottom: 1em;
+        .venta__foto{
+            padding: 1em;
+        }
+    }
+}
 }

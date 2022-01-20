@@ -12,14 +12,8 @@ main {
   width: 100%;
 }
 
-@media screen and (min-width: 375px) {
-  main {
-    width: 100%;
-  }
-}
-
 h2 {
-  font-size: 35px;
+  font-size: 30px;
   font-family: 'Raleway', sans-serif;
   color: grey;
   -webkit-text-decoration: gray;
@@ -28,30 +22,8 @@ h2 {
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   text-align: center;
-  font-size: 35px;
-}
-
-@media screen and (min-width: 375px) {
-  h2 {
-    width: 100%;
-    margin-left: 1em;
-  }
-}
-
-@media screen and (min-width: 900px) {
-  h2 {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-orient: horizontal;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: row;
-            flex-direction: row;
-    -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
-    margin-left: 0%;
-  }
+  font-size: 30px;
+  padding: 1em;
 }
 
 .logo {
@@ -73,27 +45,28 @@ h2 {
   background-color: #3f3c3c;
 }
 
-h2 {
-  font-size: 35px;
-  font-family: 'Raleway', sans-serif;
-  color: grey;
-  -webkit-text-decoration: gray;
-          text-decoration: gray;
-  background: -webkit-linear-gradient(#7e1c1c, #120c33);
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
-  text-align: center;
-}
-
 .intro {
-  background-color: #f5f3f3;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 100%;
+  height: -webkit-fit-content;
+  height: -moz-fit-content;
+  height: fit-content;
 }
 
 .intro h1 {
-  width: 80%;
+  width: 90%;
   text-align: center;
-  margin-left: 1em;
-  font-size: 35px;
+  padding: 1em;
+  font-size: 30px;
   font-family: 'Raleway', sans-serif;
   color: grey;
   -webkit-text-decoration: gray;
@@ -101,112 +74,66 @@ h2 {
   background: -webkit-linear-gradient(#7e1c1c, #120c33);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
+  font-size: 23px;
+  margin-bottom: 0%;
 }
 
-.intro .jumbotron {
+.intro .introImg {
   width: 100%;
   height: 20em;
-  background-image: url(../fotos/trigo.jpg);
+  padding: 3em;
+  background-image: url(../fotos/vacasIndex.JPG);
   background-size: cover;
   background-position: bottom;
   background-repeat: no-repeat;
 }
 
-@media screen and (min-width: 375px) {
-  .intro {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
-  }
-  .intro h1 {
-    font-size: 28px;
-    margin-left: 2em;
-    margin-bottom: 1em;
-  }
-}
-
-@media screen and (min-width: 900px) {
-  .intro {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-orient: horizontal;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: row;
-            flex-direction: row;
-    -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
-  }
-}
-
 .asesoramiento {
   background-color: #f7f1e3;
-  width: 80%;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-orient: horizontal;
+  -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
-      -ms-flex-direction: row;
-          flex-direction: row;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
-  margin-left: 9em;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-left: 1em;
   margin-bottom: 1em;
 }
 
 .asesoramiento img {
-  width: 50%;
-  height: auto;
-  padding: 1em;
+  width: 90%;
+  margin-top: 1em;
 }
 
 .asesoramiento p {
-  width: 50%;
   font-size: 16px;
   color: #6b695f;
   font-weight: normal;
   text-align: justify;
   padding: 1em;
   font-family: 'Poppins', sans-serif;
-  padding: 2em;
-  margin-top: 4em;
-}
-
-@media screen and (min-width: 375px) {
-  .asesoramiento {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
-  }
-  .asesoramiento .asesoramiento {
-    width: 100%;
-  }
-  .asesoramiento .asesoramiento img {
-    width: 100%;
-  }
-  .asesoramiento .asesoramiento p {
-    width: 100%;
-  }
 }
 
 @media screen and (min-width: 901px) {
+  .intro {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+  }
+  .intro h1 {
+    width: 50%;
+  }
+  .intro .introImg {
+    width: 50%;
+  }
   .asesoramiento {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -215,13 +142,18 @@ h2 {
     -webkit-box-direction: normal;
         -ms-flex-direction: row;
             flex-direction: row;
-    -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
+  }
+  .asesoramiento img {
+    width: 50%;
+    padding: 1em;
+  }
+  .asesoramiento p {
+    width: 50%;
   }
 }
 
 .indexInfo {
+  margin-top: 2em;
   background-color: #f7f1e3;
   height: -webkit-max-content;
   height: -moz-max-content;
@@ -231,16 +163,14 @@ h2 {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  width: 100%;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-orient: horizontal;
+  -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
-      -ms-flex-direction: row;
-          flex-direction: row;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
+      -ms-flex-direction: column;
+          flex-direction: column;
 }
 
 .indexInfo .veterinaria, .indexInfo .infoTrabajo {
@@ -265,12 +195,14 @@ h2 {
   text-align: justify;
   padding: 1em;
   font-family: 'Poppins', sans-serif;
+  padding: 2em;
+  width: 100%;
 }
 
 .indexInfo .veterinaria h3, .indexInfo .infoTrabajo h3 {
-  margin-top: 0em;
-  margin-left: 1em;
-  font-size: 35px;
+  margin-top: 1em;
+  text-align: center;
+  font-size: 30px;
   font-family: 'Raleway', sans-serif;
   color: grey;
   -webkit-text-decoration: gray;
@@ -278,12 +210,16 @@ h2 {
   background: -webkit-linear-gradient(#7e1c1c, #120c33);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
+  font-size: 30px;
+  width: 100%;
 }
 
 .indexInfo .infoTrabajo {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  width: 100%;
+  padding: 1em;
 }
 
 .indexInfo .infoTrabajo .vetContacto {
@@ -293,7 +229,7 @@ h2 {
   text-align: justify;
   padding: 1em;
   font-family: 'Poppins', sans-serif;
-  margin-top: 1em;
+  width: 100%;
 }
 
 .indexInfo .infoTrabajo a .btn {
@@ -308,31 +244,7 @@ h2 {
   border-color: #6b695f;
 }
 
-@media screen and (min-width: 375px) {
-  .indexInfo {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
-  }
-  .indexInfo .indexInfo {
-    margin: 0%;
-  }
-  .indexInfo .indexInfo .veterinaria h3, .indexInfo .indexInfo .infoTrabajo h3 {
-    margin-top: 4em;
-  }
-  .indexInfo .indexInfo .veterinaria .vetTrabajo, .indexInfo .indexInfo .infoTrabajo .vetTrabajo {
-    padding: 2em;
-  }
-}
-
-@media screen and (min-width: 900px) {
+@media screen and (min-width: 901px) {
   .indexInfo {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -341,12 +253,13 @@ h2 {
     -webkit-box-direction: normal;
         -ms-flex-direction: row;
             flex-direction: row;
-    -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
-    -webkit-box-pack: justify;
-        -ms-flex-pack: justify;
-            justify-content: space-between;
+  }
+  .indexInfo .veterinaria h3, .indexInfo .infoTrabajo h3 {
+    text-align: start;
+    margin-left: 1.2em;
+  }
+  .indexInfo .vetContacto {
+    padding: 1em;
   }
 }
 
@@ -359,10 +272,10 @@ h2 {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-orient: horizontal;
+  -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
-      -ms-flex-direction: row;
-          flex-direction: row;
+      -ms-flex-direction: column;
+          flex-direction: column;
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
@@ -377,9 +290,8 @@ h2 {
   -webkit-box-direction: normal;
       -ms-flex-direction: row;
           flex-direction: row;
-  -webkit-box-pack: start;
-      -ms-flex-pack: start;
-          justify-content: start;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
 }
 
 .footer .footer1 .logoFooter {
@@ -394,6 +306,7 @@ h2 {
       -ms-flex-align: center;
           align-items: center;
   margin-top: 4em;
+  margin-left: 2em;
 }
 
 .footer .footer1 .logoFooter img {
@@ -402,7 +315,7 @@ h2 {
 }
 
 .footer .footer1 .logoFooter p {
-  font-size: 35px;
+  font-size: 30px;
   font-family: 'Raleway', sans-serif;
   color: grey;
   -webkit-text-decoration: gray;
@@ -425,7 +338,6 @@ h2 {
       -ms-flex-align: center;
           align-items: center;
   margin-top: 1em;
-  margin-left: 1em;
   border-left-color: #1c173a;
   border-left-style: solid;
   border-left-width: 1px;
@@ -433,7 +345,7 @@ h2 {
 }
 
 .footer .footer1 .mapaSitio a {
-  font-size: 35px;
+  font-size: 30px;
   font-family: 'Raleway', sans-serif;
   color: grey;
   -webkit-text-decoration: gray;
@@ -454,10 +366,11 @@ h2 {
   -webkit-box-direction: normal;
       -ms-flex-direction: row;
           flex-direction: row;
-  -webkit-box-pack: end;
-      -ms-flex-pack: end;
-          justify-content: flex-end;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
   margin-top: 2em;
+  padding: 1em;
 }
 
 .footer .footer2 .suscribe {
@@ -490,7 +403,7 @@ h2 {
 }
 
 .footer .footer2 .suscribe h5 {
-  font-size: 35px;
+  font-size: 30px;
   font-family: 'Raleway', sans-serif;
   color: grey;
   -webkit-text-decoration: gray;
@@ -517,26 +430,7 @@ h2 {
   margin-bottom: 0.5em;
 }
 
-@media screen and (min-width: 375px) {
-  .footer {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
-    -webkit-box-pack: space-evenly;
-        -ms-flex-pack: space-evenly;
-            justify-content: space-evenly;
-    width: 100%;
-  }
-}
-
-@media screen and (min-width: 900px) {
+@media screen and (min-width: 601px) {
   .footer {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -545,9 +439,21 @@ h2 {
     -webkit-box-direction: normal;
         -ms-flex-direction: row;
             flex-direction: row;
-    -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+  }
+}
+
+@media screen and (min-width: 901px) {
+  .footer {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
     -webkit-box-pack: justify;
         -ms-flex-pack: justify;
             justify-content: space-between;
@@ -562,28 +468,35 @@ h2 {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  background-color: #f5f3f3;
-  width: 100%;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-bottom: 1em;
+  height: 100%;
 }
 
 .nosotros .info, .nosotros .patricio {
-  width: 80%;
+  width: 90%;
+  height: -webkit-max-content;
+  height: -moz-max-content;
+  height: max-content;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-orient: horizontal;
+  -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
-      -ms-flex-direction: row;
-          flex-direction: row;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -ms-flex-line-pack: center;
+      align-content: center;
   margin-top: 2em;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
   background-color: #f7f1e3;
+  margin-bottom: 1em;
+  margin-left: 1em;
 }
 
 .nosotros .info .info__nombre, .nosotros .patricio .info__nombre, .nosotros .patricio .patricio__nombre {
-  font-size: 35px;
+  font-size: 30px;
   font-family: 'Raleway', sans-serif;
   color: grey;
   -webkit-text-decoration: gray;
@@ -594,7 +507,6 @@ h2 {
 }
 
 .nosotros .info .info__texto, .nosotros .patricio .info__texto, .nosotros .patricio .patricio__texto {
-  width: 50%;
   font-size: 16px;
   color: #6b695f;
   font-weight: normal;
@@ -605,96 +517,40 @@ h2 {
   margin-left: 1em;
 }
 
-.nosotros .info .info__imagen, .nosotros .patricio .info__imagen, .nosotros .patricio .patricio__imagen {
-  width: 50%;
-  height: auto;
+.nosotros .info .info__imagen__walter, .nosotros .patricio .info__imagen__walter, .nosotros .info .info__imagen__ariel, .nosotros .patricio .info__imagen__ariel, .nosotros .patricio .patricio__imagen {
+  background-image: url(../fotos/walter.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
   padding: 1em;
+  width: 90%;
+  margin-left: 1.5em;
 }
 
-.nosotros .info .info__imagen img, .nosotros .patricio .info__imagen img, .nosotros .patricio .patricio__imagen img {
-  width: 25em;
-  height: auto;
-}
-
-@media screen and (min-width: 375px) {
-  .nosotros .info, .nosotros .patricio {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
-    width: 100%;
-  }
-  .nosotros .info .info__nombre, .nosotros .patricio .info__nombre, .nosotros .patricio .patricio__nombre {
-    width: 100%;
-  }
-  .nosotros .info .info__imagen, .nosotros .patricio .info__imagen, .nosotros .patricio .patricio__imagen {
-    width: 90%;
-  }
-  .nosotros .info .info__texto, .nosotros .patricio .info__texto, .nosotros .patricio .patricio__texto {
-    width: 100%;
-  }
+.nosotros .info .info__imagen__ariel, .nosotros .patricio .info__imagen__ariel {
+  background-image: url(../fotos/bartolo.jpg);
+  height: -webkit-fit-content;
+  height: -moz-fit-content;
+  height: fit-content;
 }
 
 .nosotros .patricio {
-  margin-left: 17em;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: reverse;
+      -ms-flex-direction: column-reverse;
+          flex-direction: column-reverse;
 }
 
 .nosotros .patricio .patricio__texto {
   margin-right: 2em;
 }
 
-@media screen and (min-width: 375px) {
-  .nosotros .patricio {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
-  }
-  .nosotros .patricio .info, .nosotros .patricio .patricio {
-    width: 100%;
-    margin: 0%;
-  }
-  .nosotros .patricio .info .patricio__imagen, .nosotros .patricio .patricio .patricio__imagen {
-    width: 100%;
-  }
-  .nosotros .patricio .info .patricio__nombre, .nosotros .patricio .patricio .patricio__nombre {
-    width: 100%;
-  }
-  .nosotros .patricio .info .patricio__texto, .nosotros .patricio .patricio .patricio__texto {
-    width: 100%;
-  }
-}
-
-@media screen and (min-width: 900px) {
-  .nosotros .patricio {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-orient: horizontal;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: row;
-            flex-direction: row;
-    -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
-  }
+.nosotros .patricio .patricio__imagen {
+  background-image: url(../fotos/pato.jpg);
 }
 
 .seguinos {
   margin-top: 3em;
-  font-size: 20px;
+  font-size: 22px;
   font-size: 16px;
   color: #6b695f;
   font-weight: normal;
@@ -706,7 +562,44 @@ h2 {
 
 .instagram {
   width: 80%;
-  margin-left: 10em;
+  margin-left: 3em;
+}
+
+@media screen and (min-width: 901px) {
+  .nosotros {
+    width: 100%;
+    margin-left: 0%;
+  }
+  .nosotros .info, .nosotros .patricio {
+    width: 85%;
+    height: -webkit-fit-content;
+    height: -moz-fit-content;
+    height: fit-content;
+    margin-left: 0%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  .nosotros .info .info__texto, .nosotros .patricio .info__texto, .nosotros .patricio .patricio__texto {
+    width: 50%;
+    padding: 1em;
+    margin-left: 0%;
+  }
+  .nosotros .info .info__imagen__walter, .nosotros .patricio .info__imagen__walter, .nosotros .info .info__imagen__ariel, .nosotros .patricio .info__imagen__ariel, .nosotros .patricio .patricio__imagen {
+    width: 50%;
+    margin-top: 1.5em;
+    margin-right: 1em;
+  }
+  .instagram {
+    margin-left: 7em;
+  }
 }
 
 .sectionServicios {
@@ -720,31 +613,29 @@ h2 {
 }
 
 .sectionServicios .sanidad, .sectionServicios .reproduccion, .sectionServicios .venta, .sectionServicios .analisis {
-  width: 80%;
+  width: 90%;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-orient: horizontal;
+  -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
-      -ms-flex-direction: row;
-          flex-direction: row;
+      -ms-flex-direction: column;
+          flex-direction: column;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  -ms-flex-pack: distribute;
-      justify-content: space-around;
   background-color: #f7f1e3;
   margin-top: 2em;
+  margin-left: 1.5em;
 }
 
 .sectionServicios .sanidad .serv__foto, .sectionServicios .reproduccion .serv__foto, .sectionServicios .venta .serv__foto, .sectionServicios .analisis .serv__foto {
-  width: 30%;
-  margin-left: 2em;
+  width: 90%;
   padding: 1em;
 }
 
 .sectionServicios .sanidad .serv__titulo, .sectionServicios .reproduccion .serv__titulo, .sectionServicios .venta .serv__titulo, .sectionServicios .analisis .serv__titulo {
-  font-size: 35px;
+  font-size: 30px;
   font-family: 'Raleway', sans-serif;
   color: grey;
   -webkit-text-decoration: gray;
@@ -752,11 +643,11 @@ h2 {
   background: -webkit-linear-gradient(#7e1c1c, #120c33);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
-  margin-top: 1em;
+  padding: 0%;
 }
 
 .sectionServicios .sanidad .servicios, .sectionServicios .reproduccion .servicios, .sectionServicios .venta .servicios, .sectionServicios .analisis .servicios {
-  width: 50%;
+  width: 100%;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -773,49 +664,86 @@ h2 {
   text-align: justify;
   padding: 1em;
   font-family: 'Poppins', sans-serif;
-  padding: 2em;
+  padding: 1em;
   margin-top: 0%;
 }
 
-.sectionServicios .reproduccion, .sectionServicios .venta {
-  -webkit-box-orient: horizontal;
-  -webkit-box-direction: reverse;
-      -ms-flex-direction: row-reverse;
-          flex-direction: row-reverse;
-  margin-left: 16em;
+.sectionServicios .venta {
+  margin-bottom: 1em;
 }
 
 .sectionServicios .venta .venta__foto {
+  margin-top: 1em;
   width: 25em;
   height: auto;
+}
+
+@media screen and (min-width: 901px) {
+  .sectionServicios .sanidad, .sectionServicios .reproduccion, .sectionServicios .venta, .sectionServicios .analisis {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    width: 80%;
+    height: -webkit-fit-content;
+    height: -moz-fit-content;
+    height: fit-content;
+    margin-left: 1em;
+  }
+  .sectionServicios .sanidad .servicios, .sectionServicios .reproduccion .servicios, .sectionServicios .venta .servicios, .sectionServicios .analisis .servicios {
+    width: 50%;
+  }
+  .sectionServicios .sanidad .servicios .serv__titulo, .sectionServicios .reproduccion .servicios .serv__titulo, .sectionServicios .venta .servicios .serv__titulo, .sectionServicios .analisis .servicios .serv__titulo {
+    margin-top: 1em;
+  }
+  .sectionServicios .sanidad .servicios p, .sectionServicios .reproduccion .servicios p, .sectionServicios .venta .servicios p, .sectionServicios .analisis .servicios p {
+    padding: 2em;
+    padding-top: 0%;
+  }
+  .sectionServicios .sanidad .serv__foto, .sectionServicios .reproduccion .serv__foto, .sectionServicios .venta .serv__foto, .sectionServicios .analisis .serv__foto {
+    width: 50%;
+  }
+  .sectionServicios .reproduccion, .sectionServicios .venta {
+    margin-left: 15em;
+  }
+  .sectionServicios .venta {
+    margin-bottom: 1em;
+  }
+  .sectionServicios .venta .venta__foto {
+    padding: 1em;
+  }
 }
 
 .contacto__page {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-orient: horizontal;
+  -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
-      -ms-flex-direction: row;
-          flex-direction: row;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   margin-bottom: 2em;
 }
 
 .contacto__page .mapa {
-  width: 50%;
-  height: 47em;
-  margin-left: 2em;
+  width: 90%;
+  height: 43em;
+  margin-left: 1em;
 }
 
 .contacto__page .formulario {
-  width: 50%;
+  width: 90%;
   height: -webkit-fit-content;
   height: -moz-fit-content;
   height: fit-content;
   background-color: #f7f1e3;
+  margin-top: 1em;
   margin-left: 1em;
   margin-right: 1em;
 }
@@ -851,33 +779,7 @@ h2 {
   border-color: #6b695f;
 }
 
-@media screen and (min-width: 375px) {
-  .contacto__page {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
-  }
-  .contacto__page .contacto__page {
-    width: 100%;
-  }
-  .contacto__page .mapa {
-    width: 100%;
-    margin-bottom: 1em;
-  }
-  .contacto__page .formulario {
-    width: 100%;
-    margin-left: 2.5em;
-  }
-}
-
-@media screen and (min-width: 900px) {
+@media screen and (min-width: 901px) {
   .contacto__page {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -886,9 +788,6 @@ h2 {
     -webkit-box-direction: normal;
         -ms-flex-direction: row;
             flex-direction: row;
-    -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
   }
 }
 /*# sourceMappingURL=estilo.css.map */

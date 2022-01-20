@@ -18,11 +18,11 @@
         margin-bottom: 1em;
         padding: 1em;
         background-color: aqua;
-
+        gap: 2vw;
         .info__texto {
             width: 95%;
             @include textos;
-
+            
             .info__nombre {
                 @include texto-index;
             }
@@ -30,44 +30,33 @@
                 background-color: beige;
             }
         }
-        .info__imagen__walter {
+        
+        .nosotrosImagen{
             width: 95%;
-            min-height: 200px;            
-            background-image: url(../fotos/walter.jpg);
+            min-height: 300px;            
             background-repeat: no-repeat;
-            background-size: cover
+            background-size: contain;
+            background-position: center;
         }
 
-
-
-
-
-        .info__imagen__ariel{
-            @extend .info__imagen__walter;
-           
+    }
+    .walter{
+        .nosotrosImagen{
+            background-image: url(../fotos/walter.jpg);
         }
     }
-
-        .patricio {
-            @extend .info;
-            flex-direction: column-reverse;
-            
-
-            .patricio__nombre {
-                @extend .info__nombre;
-            }
-
-            .patricio__texto {
-                @extend .info__texto;
-                margin-right: 2em;
-            }
-
-            .patricio__imagen {
-                @extend .info__imagen__walter;
-               
-            }
-
+    .patricio{
+    
+        .nosotrosImagen{
+                background-image: url(../fotos/pato.jpg);
         }
+    }
+    .ariel{
+    
+        .nosotrosImagen{
+            background-image: url(../fotos/bartolo.jpg);
+        }
+    }
 
 }
 
@@ -83,6 +72,24 @@
     margin-left: 2em;
 }
 
+@media screen and (min-width: 720px) {
+    .nosotros{
+        .info{
+            flex-direction: row;
+            align-items: flex-end;
+            justify-content: center;
+        }
+        .walter{
+
+        }
+        .patricio{
+            flex-direction: row-reverse;
+        }
+        .ariel{
+
+        }
+    }
+}
 @media screen and (min-width: 901px) {
     .nosotros{
         width: 100%;

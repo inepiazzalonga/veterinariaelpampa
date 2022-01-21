@@ -6,7 +6,7 @@
 
     .mapa {
         width: 90%;
-        height: 43em;
+        height: 42em;
         margin-left: 1em;
     }
 
@@ -41,5 +41,13 @@
     .contacto__page{
         display: flex;
         flex-direction: row;
+        justify-content: center;
+        .mapa{
+            height: 40em;
+        }   
+        .formulario{
+            margin-top: 0%;
+            height: 40em;
+        }
     }
 }

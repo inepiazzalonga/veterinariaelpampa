@@ -159,12 +159,13 @@ h2 {
 
     p{
         @include textos;
+        padding: 1.5em;
     }
 
 }
 
 // media queries
-@media screen and (min-width: 901px) {
+@media screen and (min-width: 720px) {
     .intro{
         display: flex;
         flex-direction: row;

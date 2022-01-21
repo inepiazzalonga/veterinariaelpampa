@@ -1,6 +1,7 @@
 .sectionServicios{
     display: flex;
     flex-direction: column;
+    align-items: center;
 
     .sanidad{
         width: 90%;
@@ -9,22 +10,25 @@
         align-items: center;
         background-color: $color3;
         margin-top: 2em;
-        margin-left: 1.5em;
+        padding: 1em;
 
         .serv__foto{
             width: 90%;
-            padding: 1em;
+            min-height: 300px;
+            background-image: url(../fotos/walterypato.jpg);
+            background-position: center;
+            background-size: cover;
+            background-repeat: no-repeat;
         }
-
-        .serv__titulo{
-            @include texto-index;
-            padding: 0%;
-        }
-
         .servicios{
             width: 100%;
             display: flex;
             flex-direction: column;
+            .serv__titulo{
+                @include texto-index;
+                padding: 0%;
+                margin-top: 1em;
+            }    
 
             p{
                 @include textos;
@@ -36,55 +40,42 @@
 
     .reproduccion{
         @extend .sanidad;
+        .serv__foto{
+            background-image: url(../fotos/insem.jpg) 
+        }
     }
 
     .analisis{
         @extend .sanidad;
+        .serv__foto{
+            background-image: url(../fotos/triquinas.jpg) 
+        }
     }
 
     .venta{
         @extend .sanidad;
+        .serv__foto{
+            background-image: url(../fotos/valvula.jpg);
+        }
         margin-bottom: 1em;
 
-      .venta__foto{
-          margin-top: 1em;
-          width: 25em;
-          height: auto;
-      }
     }
 }
 
-@media screen and (min-width: 901px) {
+@media screen and (min-width: 720px) {
 .sectionServicios{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
     .sanidad{
-        display: flex;
         flex-direction: row;
-        width: 80%;
-        height: fit-content;
-        margin-left: 1em;
-        .servicios{
-            width: 50%;
-            .serv__titulo{
-                margin-top: 1em;
-            }
-            p{
-                padding: 2em;
-                padding-top: 0%;
-            }
-        }
-        .serv__foto{
-            width: 50%;
-        }
     }
     .reproduccion{
-        margin-left: 15em;
+        flex-direction: row-reverse;
     }
     .venta{
-        @extend .reproduccion;
-        margin-bottom: 1em;
-        .venta__foto{
-            padding: 1em;
-        }
+        flex-direction: row-reverse;
     }
 }
+
 }

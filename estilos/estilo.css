@@ -18,7 +18,7 @@ h2 {
   color: grey;
   -webkit-text-decoration: gray;
           text-decoration: gray;
-  background: -webkit-linear-gradient(#7e1c1c, #120c33);
+  background: -webkit-linear-gradient(#f71f1f, #281b72);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   text-align: center;
@@ -71,7 +71,7 @@ h2 {
   color: grey;
   -webkit-text-decoration: gray;
           text-decoration: gray;
-  background: -webkit-linear-gradient(#7e1c1c, #120c33);
+  background: -webkit-linear-gradient(#f71f1f, #281b72);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   font-size: 23px;
@@ -89,7 +89,7 @@ h2 {
 }
 
 .asesoramiento {
-  background-color: #f7f1e3;
+  background-color: #3b4b53;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -111,7 +111,7 @@ h2 {
 
 .asesoramiento p {
   font-size: 16px;
-  color: #6b695f;
+  color: #dddbd2;
   font-weight: normal;
   text-align: justify;
   padding: 0px;
@@ -155,7 +155,7 @@ h2 {
 
 .indexInfo {
   margin-top: 2em;
-  background-color: #f7f1e3;
+  background-color: #3b4b53;
   height: -webkit-max-content;
   height: -moz-max-content;
   height: max-content;
@@ -176,7 +176,7 @@ h2 {
 
 .indexInfo .veterinaria, .indexInfo .infoTrabajo {
   width: 100%;
-  color: #6b695f;
+  color: #dddbd2;
   margin-top: 0%;
   text-align: justify;
   margin-bottom: 0%;
@@ -191,7 +191,7 @@ h2 {
 
 .indexInfo .veterinaria .vetTrabajo, .indexInfo .infoTrabajo .vetTrabajo {
   font-size: 16px;
-  color: #6b695f;
+  color: #dddbd2;
   font-weight: normal;
   text-align: justify;
   padding: 0px;
@@ -208,7 +208,7 @@ h2 {
   color: grey;
   -webkit-text-decoration: gray;
           text-decoration: gray;
-  background: -webkit-linear-gradient(#7e1c1c, #120c33);
+  background: -webkit-linear-gradient(#f71f1f, #281b72);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   font-size: 30px;
@@ -225,7 +225,7 @@ h2 {
 
 .indexInfo .infoTrabajo .vetContacto {
   font-size: 16px;
-  color: #6b695f;
+  color: #dddbd2;
   font-weight: normal;
   text-align: justify;
   padding: 0px;
@@ -242,7 +242,7 @@ h2 {
           transform: scale(1.1);
   border-style: solid;
   border-width: 1px;
-  border-color: #6b695f;
+  border-color: #dddbd2;
 }
 
 @media screen and (min-width: 901px) {
@@ -321,7 +321,7 @@ h2 {
   color: grey;
   -webkit-text-decoration: gray;
           text-decoration: gray;
-  background: -webkit-linear-gradient(#7e1c1c, #120c33);
+  background: -webkit-linear-gradient(#f71f1f, #281b72);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   font-size: 18px;
@@ -351,7 +351,7 @@ h2 {
   color: grey;
   -webkit-text-decoration: gray;
           text-decoration: gray;
-  background: -webkit-linear-gradient(#7e1c1c, #120c33);
+  background: -webkit-linear-gradient(#f71f1f, #281b72);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   font-size: 14px;
@@ -400,7 +400,7 @@ h2 {
           transform: scale(1.1);
   border-style: solid;
   border-width: 1px;
-  border-color: #6b695f;
+  border-color: #dddbd2;
 }
 
 .footer .footer2 .suscribe h5 {
@@ -409,7 +409,7 @@ h2 {
   color: grey;
   -webkit-text-decoration: gray;
           text-decoration: gray;
-  background: -webkit-linear-gradient(#7e1c1c, #120c33);
+  background: -webkit-linear-gradient(#f71f1f, #281b72);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
 }
@@ -478,6 +478,7 @@ h2 {
 }
 
 .nosotros .info {
+  border-radius: 20px;
   width: 90vw;
   height: 100%;
   display: -webkit-box;
@@ -491,17 +492,17 @@ h2 {
       -ms-flex-align: center;
           align-items: center;
   margin-top: 2em;
-  background-color: #f7f1e3;
+  background-color: #3b4b53;
   margin-bottom: 1em;
   padding: 1em;
-  background-color: #f7f1e3;
+  background-color: #3b4b53;
   gap: 2vw;
 }
 
 .nosotros .info .info__texto {
   width: 95%;
   font-size: 16px;
-  color: #6b695f;
+  color: #dddbd2;
   font-weight: normal;
   text-align: justify;
   padding: 0px;
@@ -514,13 +515,13 @@ h2 {
   color: grey;
   -webkit-text-decoration: gray;
           text-decoration: gray;
-  background: -webkit-linear-gradient(#7e1c1c, #120c33);
+  background: -webkit-linear-gradient(#f71f1f, #281b72);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
 }
 
 .nosotros .info .info__texto p {
-  background-color: beige;
+  color: whitesmoke;
 }
 
 .nosotros .info .nosotrosImagen {
@@ -547,7 +548,7 @@ h2 {
   margin-top: 3em;
   font-size: 22px;
   font-size: 16px;
-  color: #6b695f;
+  color: #dddbd2;
   font-weight: normal;
   text-align: justify;
   padding: 0px;
@@ -583,23 +584,24 @@ h2 {
     -webkit-box-direction: normal;
         -ms-flex-direction: row;
             flex-direction: row;
-    -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
+    -ms-flex-pack: distribute;
+        justify-content: space-around;
   }
   .nosotros .info .info__texto {
     width: 50%;
     padding: 1em;
-    margin-left: 0%;
+    margin-left: 1em;
   }
   .nosotros .info .nosotrosImagen {
     width: 50%;
+    margin-right: 1em;
   }
   .nosotros .info .patricio {
     -webkit-box-orient: horizontal;
     -webkit-box-direction: reverse;
         -ms-flex-direction: row-reverse;
             flex-direction: row-reverse;
+    margin-left: 5em;
   }
 }
 
@@ -628,7 +630,7 @@ h2 {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  background-color: #f7f1e3;
+  background-color: #3b4b53;
   margin-top: 2em;
   padding: 1em;
 }
@@ -659,7 +661,7 @@ h2 {
   color: grey;
   -webkit-text-decoration: gray;
           text-decoration: gray;
-  background: -webkit-linear-gradient(#7e1c1c, #120c33);
+  background: -webkit-linear-gradient(#f71f1f, #281b72);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   padding: 0%;
@@ -668,7 +670,7 @@ h2 {
 
 .sectionServicios .sanidad .servicios p, .sectionServicios .reproduccion .servicios p, .sectionServicios .analisis .servicios p, .sectionServicios .venta .servicios p {
   font-size: 16px;
-  color: #6b695f;
+  color: #dddbd2;
   font-weight: normal;
   text-align: justify;
   padding: 0px;
@@ -751,7 +753,7 @@ h2 {
   height: -webkit-fit-content;
   height: -moz-fit-content;
   height: fit-content;
-  background-color: #f7f1e3;
+  background-color: #3b4b53;
   margin-top: 1em;
   margin-right: 1em;
 }
@@ -768,7 +770,7 @@ h2 {
       -ms-flex-direction: column;
           flex-direction: column;
   font-size: 16px;
-  color: #6b695f;
+  color: #dddbd2;
   font-weight: normal;
   text-align: justify;
   padding: 0px;
@@ -784,7 +786,7 @@ h2 {
           transform: scale(1.1);
   border-style: solid;
   border-width: 1px;
-  border-color: #6b695f;
+  border-color: #dddbd2;
 }
 
 @media screen and (min-width: 901px) {

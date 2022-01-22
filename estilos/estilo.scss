@@ -4,8 +4,8 @@
 //variables
 $color1: rgb(245, 243, 243);
 $color2: rgb(63, 60, 60);
-$color3: rgb(247, 241, 227);
-$color4: rgb(107, 105, 95);
+$color3: #3b4b53;
+$color4: rgb(221, 219, 210);
 $color5: rgb(226, 222, 214);
 $color6: rgb(28, 23, 58);
 $h2: 18px;
@@ -26,7 +26,7 @@ $fontSizes: ("small": 16px, "medium": 22px, "large": 30px);
     font-family: 'Raleway', sans-serif;
     color: grey;
     text-decoration: gray;
-    background: -webkit-linear-gradient(rgb(126, 28, 28), rgb(18, 12, 51));
+    background: -webkit-linear-gradient(rgb(247, 31, 31), rgb(40, 27, 114));
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
 }

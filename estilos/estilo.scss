@@ -145,12 +145,15 @@ h2 {
 // asesoramiento
 
 .asesoramiento{
+    width: 90%;
     background-color: $color3;
     display: flex;
     flex-direction: column;
     align-items: center;
     padding: 2em;
     margin-bottom: 1em;
+    margin-left: 1em;
+    
 
     img{
         width: 90%;
@@ -165,10 +168,12 @@ h2 {
 }
 
 // media queries
+
 @media screen and (min-width: 720px) {
     .intro{
         display: flex;
         flex-direction: row;
+        
         h1{
             width: 50%;
         }
@@ -176,9 +181,10 @@ h2 {
             width: 50%;
         }
     }
-    .asesoramiento{
+    .asesoramiento{        
         display: flex;
         flex-direction: row;
+        margin-left: 4em;
         img{
             width: 50%;
             padding: 1em;

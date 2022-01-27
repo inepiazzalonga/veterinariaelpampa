@@ -12,7 +12,7 @@ main {
   width: 100%;
 }
 
-h2 {
+h1 {
   font-size: 30px;
   font-family: 'Raleway', sans-serif;
   color: grey;
@@ -518,10 +518,6 @@ h2 {
   background: -webkit-linear-gradient(#7e1c1c, #120c33);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
-}
-
-.nosotros .info .info__texto p {
-  background-color: beige;
 }
 
 .nosotros .info .nosotrosImagen {

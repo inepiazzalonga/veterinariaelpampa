@@ -91,7 +91,7 @@ main{
 width: 100%;
 }
 
-h2 {
+h1 {
     @include texto-index;
     text-align: center;
     font-size: map-get($fontSizes, "large");

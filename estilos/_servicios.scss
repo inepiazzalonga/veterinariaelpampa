@@ -28,6 +28,8 @@
             align-items: center;
             .serv__titulo{
                 @include texto-index;
+                font-size: 23px;
+                text-align: center;
                 padding: 0%;
                 margin-top: 1em;
             }    
@@ -45,6 +47,7 @@
         .serv__foto{
             background-image: url(../fotos/insem.jpg) 
         }
+        
     }
 
     .analisis{

@@ -200,7 +200,7 @@ h1 {
   text-align: justify;
   padding: 0px;
   font-family: 'Poppins', sans-serif;
-  padding: 2em;
+  padding: 1em;
   width: 100%;
 }
 
@@ -528,6 +528,8 @@ h1 {
   background: -webkit-linear-gradient(#7e1c1c, #120c33);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
+  font-size: 23px;
+  text-align: center;
 }
 
 .nosotros .info .nosotrosImagen {
@@ -547,28 +549,41 @@ h1 {
 }
 
 .nosotros .ariel .nosotrosImagen {
-  background-image: url(../fotos/bartolo.jpg);
-}
-
-.nosotros .seguinos {
-  margin-top: 3em;
-  font-size: 22px;
-  font-size: 16px;
-  color: white;
-  font-weight: normal;
-  text-align: justify;
-  padding: 0px;
-  font-family: 'Poppins', sans-serif;
-  text-align: center;
+  background-image: url(../fotos/bartolo2.jpg);
 }
 
 .nosotros .instagram {
   width: 95%;
 }
 
+.nosotros .instagram h3 {
+  margin-top: 3em;
+  font-size: 30px;
+  font-family: 'Raleway', sans-serif;
+  color: grey;
+  -webkit-text-decoration: gray;
+          text-decoration: gray;
+  background: -webkit-linear-gradient(#7e1c1c, #120c33);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  font-size: 24px;
+  text-align: center;
+}
+
 @media screen and (min-width: 601px) {
   .instagram {
     width: 95%;
+  }
+  .instagram h3 {
+    font-size: 30px;
+    font-family: 'Raleway', sans-serif;
+    color: grey;
+    -webkit-text-decoration: gray;
+            text-decoration: gray;
+    background: -webkit-linear-gradient(#7e1c1c, #120c33);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    font-size: 30px;
   }
 }
 
@@ -610,6 +625,20 @@ h1 {
     -webkit-box-direction: reverse;
         -ms-flex-direction: row-reverse;
             flex-direction: row-reverse;
+  }
+  .instagram {
+    width: 95%;
+  }
+  .instagram h3 {
+    font-size: 30px;
+    font-family: 'Raleway', sans-serif;
+    color: grey;
+    -webkit-text-decoration: gray;
+            text-decoration: gray;
+    background: -webkit-linear-gradient(#7e1c1c, #120c33);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    font-size: 30px;
   }
 }
 
@@ -676,6 +705,8 @@ h1 {
   background: -webkit-linear-gradient(#7e1c1c, #120c33);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
+  font-size: 23px;
+  text-align: center;
   padding: 0%;
   margin-top: 1em;
 }

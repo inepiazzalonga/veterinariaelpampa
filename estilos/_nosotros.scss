@@ -26,6 +26,8 @@
 
             .info__nombre {
                 @include texto-index;
+                font-size: 23px;
+                text-align: center;
             }
         }
 
@@ -55,19 +57,18 @@
     .ariel {
 
         .nosotrosImagen {
-            background-image: url(../fotos/bartolo.jpg);
+            background-image: url(../fotos/bartolo2.jpg);
         }
     }
-
-    .seguinos {
-        margin-top: 3em;
-        font-size: map-get($fontSizes, "medium");
-        @include textos;
-        text-align: center;
-    }
-
     .instagram {
         width: 95%;
+
+        h3 {
+            margin-top: 3em;
+            @include texto-index;
+            font-size: 24px;
+            text-align: center;
+        }
     }
 }
 
@@ -76,6 +77,10 @@
 @media screen and (min-width: 601px) {
     .instagram {
         width: 95%;
+        h3{
+            @include texto-index;
+            font-size: 30px;
+        }
     }
 }
 
@@ -107,6 +112,13 @@
                 flex-direction: row-reverse;
             }
 
+        }
+    }
+    .instagram {
+        width: 95%;
+        h3{
+            @include texto-index;
+            font-size: 30px;
         }
     }
 }

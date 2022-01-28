@@ -85,6 +85,7 @@ $fontSizes: ("small": 16px, "medium": 22px, "large": 30px);
 
 body {
     background-color: $color1;
+    overflow-x: hidden;
 }
 
 main{

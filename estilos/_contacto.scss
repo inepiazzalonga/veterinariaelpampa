@@ -7,7 +7,7 @@
     width: 100%;
 
     .contactanos {
-        width: 90%;
+        width: 98%;
         height: 42em;
 
 
@@ -23,7 +23,6 @@
                 color: honeydew;
                 font-size: 18px;
                 margin-left: 1em;
-                margin-top: 1em;
             }
 
             p {
@@ -45,7 +44,7 @@
 
 
     .formulario {
-        width: 90%;
+        width: 98%;
         height: 42em;
         background-color: $color3;
         margin-top: 1.5em;
@@ -83,7 +82,9 @@
         .contactanos {
             .infoContacto {
                 height: 12em;
-
+                h2{
+                    margin-top: 1em;
+                }
                 .mapa {
                     height: 30em;
                 }
@@ -93,6 +94,9 @@
         .formulario {
             margin-top: 0%;
             height: 42em;
+            .formulario__input{
+                margin-left: 3em;
+            }
         }
 
     }

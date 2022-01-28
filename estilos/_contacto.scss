@@ -4,50 +4,96 @@
     align-items: center;
     margin-bottom: 2em;
     padding: 2em;
+    width: 100%;
 
-    .mapa {
+    .contactanos {
         width: 90%;
         height: 42em;
+
+
+        .infoContacto {
+            background-color: $color3;
+            width: 95%;
+            height: 12em;
+            padding: 1em;
+            border-radius: 5px;
+
+            h2 {
+                @include texto-index;
+                color: honeydew;
+                font-size: 18px;
+                margin-left: 1em;
+                margin-top: 1em;
+            }
+
+            p {
+                @include textos;
+                margin-left: 1em;
+                a{
+                    color: ivory;
+                }
+            }
+        }
+
+        .mapa {
+            width: 95%;
+            height: 30em;
+            margin-top: 1em;
+        }
     }
+
+
 
     .formulario {
         width: 90%;
-        height: fit-content;
+        height: 42em;
         background-color: $color3;
-        margin-top: 1em;
+        margin-top: 1.5em;
         margin-right: 1em;
+        border-radius: 5px;
+
+        .formulario__input {
+            width: 85%;
+            margin-top: 1em;
+            margin-left: 1.5em;
+            display: flex;
+            flex-direction: column;
+            @include textos;
+
+            textarea {
+                margin-top: 1em;
+            }
+
+            .enviar:hover {
+                @include buttonHover;
+            }
+        }
+
     }
 
-    .formulario__input {
-        width: 85%;
-        margin-top: 1em;
-        margin-left: 1.5em;
-        display: flex;
-        flex-direction: column;
-        @include textos;
 
-        textarea {
-            margin-top: 1em;
-        }
-
-        .enviar:hover {
-            @include buttonHover;
-        }
-    }    
 }
 
 @media screen and (min-width: 901px) {
-    .contacto__page{
+    .contacto__page {
         display: flex;
         flex-direction: row;
         justify-content: center;
-        .mapa{
-            height: 40em;
-        }   
-        .formulario{
-            margin-top: 0%;
-            height: 40em;
+
+        .contactanos {
+            .infoContacto {
+                height: 12em;
+
+                .mapa {
+                    height: 30em;
+                }
+            }
         }
-        
+
+        .formulario {
+            margin-top: 0%;
+            height: 42em;
+        }
+
     }
 }

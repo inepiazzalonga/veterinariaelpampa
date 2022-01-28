@@ -104,6 +104,7 @@ h1 {
   padding: 2em;
   margin-bottom: 1em;
   margin-left: 1em;
+  border-radius: 7px;
 }
 
 .asesoramiento img {
@@ -505,6 +506,7 @@ h1 {
   margin-bottom: 1em;
   padding: 1em;
   gap: 2vw;
+  border-radius: 5px;
 }
 
 .nosotros .info .info__texto {
@@ -601,6 +603,9 @@ h1 {
     width: 50%;
   }
   .nosotros .info .patricio {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
     -webkit-box-orient: horizontal;
     -webkit-box-direction: reverse;
         -ms-flex-direction: row-reverse;
@@ -636,6 +641,7 @@ h1 {
   background-color: #c5b285;
   margin-top: 2em;
   padding: 1em;
+  border-radius: 5px;
 }
 
 .sectionServicios .sanidad .serv__foto, .sectionServicios .reproduccion .serv__foto, .sectionServicios .analisis .serv__foto, .sectionServicios .venta .serv__foto {
@@ -656,6 +662,9 @@ h1 {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 
 .sectionServicios .sanidad .servicios .serv__titulo, .sectionServicios .reproduccion .servicios .serv__titulo, .sectionServicios .analisis .servicios .serv__titulo, .sectionServicios .venta .servicios .serv__titulo {
@@ -744,24 +753,67 @@ h1 {
           align-items: center;
   margin-bottom: 2em;
   padding: 2em;
+  width: 100%;
 }
 
-.contacto__page .mapa {
+.contacto__page .contactanos {
   width: 90%;
   height: 42em;
 }
 
-.contacto__page .formulario {
-  width: 90%;
-  height: -webkit-fit-content;
-  height: -moz-fit-content;
-  height: fit-content;
+.contacto__page .contactanos .infoContacto {
   background-color: #c5b285;
-  margin-top: 1em;
-  margin-right: 1em;
+  width: 95%;
+  height: 12em;
+  padding: 1em;
+  border-radius: 5px;
 }
 
-.contacto__page .formulario__input {
+.contacto__page .contactanos .infoContacto h2 {
+  font-size: 30px;
+  font-family: 'Raleway', sans-serif;
+  color: grey;
+  -webkit-text-decoration: gray;
+          text-decoration: gray;
+  background: -webkit-linear-gradient(#7e1c1c, #120c33);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  color: honeydew;
+  font-size: 18px;
+  margin-left: 1em;
+  margin-top: 1em;
+}
+
+.contacto__page .contactanos .infoContacto p {
+  font-size: 16px;
+  color: white;
+  font-weight: normal;
+  text-align: justify;
+  padding: 0px;
+  font-family: 'Poppins', sans-serif;
+  margin-left: 1em;
+}
+
+.contacto__page .contactanos .infoContacto p a {
+  color: ivory;
+}
+
+.contacto__page .contactanos .mapa {
+  width: 95%;
+  height: 30em;
+  margin-top: 1em;
+}
+
+.contacto__page .formulario {
+  width: 90%;
+  height: 42em;
+  background-color: #c5b285;
+  margin-top: 1.5em;
+  margin-right: 1em;
+  border-radius: 5px;
+}
+
+.contacto__page .formulario .formulario__input {
   width: 85%;
   margin-top: 1em;
   margin-left: 1.5em;
@@ -780,11 +832,11 @@ h1 {
   font-family: 'Poppins', sans-serif;
 }
 
-.contacto__page .formulario__input textarea {
+.contacto__page .formulario .formulario__input textarea {
   margin-top: 1em;
 }
 
-.contacto__page .formulario__input .enviar:hover {
+.contacto__page .formulario .formulario__input .enviar:hover {
   -webkit-transform: scale(1.1);
           transform: scale(1.1);
   border-style: solid;
@@ -805,12 +857,15 @@ h1 {
         -ms-flex-pack: center;
             justify-content: center;
   }
-  .contacto__page .mapa {
-    height: 40em;
+  .contacto__page .contactanos .infoContacto {
+    height: 12em;
+  }
+  .contacto__page .contactanos .infoContacto .mapa {
+    height: 30em;
   }
   .contacto__page .formulario {
     margin-top: 0%;
-    height: 40em;
+    height: 42em;
   }
 }
 /*# sourceMappingURL=estilo.css.map */

@@ -607,14 +607,12 @@ h1 {
     -webkit-box-direction: normal;
         -ms-flex-direction: row;
             flex-direction: row;
-    -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
+    -ms-flex-pack: distribute;
+        justify-content: space-around;
   }
   .nosotros .info .info__texto {
     width: 50%;
     padding: 1em;
-    margin-left: 0%;
   }
   .nosotros .info .nosotrosImagen {
     width: 50%;
